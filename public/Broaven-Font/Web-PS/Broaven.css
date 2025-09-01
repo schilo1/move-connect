@@ -1,0 +1,9 @@
+/* Webfont: Broaven-Regular */@font-face {
+    font-family: 'Broaven';
+    src: url('Broaven.woff2') format('woff2'), /* Modern Browsers */
+         url('Broaven.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

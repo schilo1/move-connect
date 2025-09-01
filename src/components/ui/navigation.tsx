@@ -13,7 +13,7 @@ const Navigation = () => {
     { name: "Services", href: "#services" },
     { name: "Témoignages", href: "#temoignages" },
     { name: "Partenaires", href: "#partenaires" },
-    { name: "Contact", href: "#contact" }
+    { name: "Contact", href: "#contact" },
   ];
 
   return (
@@ -22,11 +22,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <img 
-              src="/lovable-uploads/836eca42-076d-461c-a88c-12992ae86de9.png" 
-              alt="GBÔ Logo"
-              className="h-10 w-auto"
-            />
+            <img src="logo.png" alt="GBÔ Logo" className="h-10 w-auto" />
           </div>
 
           {/* Desktop Menu */}
@@ -35,12 +31,15 @@ const Navigation = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-foreground hover:text-primary transition-colors duration-300 font-medium"
+                className="text-foreground hover:text-primary transition-colors duration-300 font-broaven font-medium"
               >
                 {item.name}
               </a>
             ))}
-            <Button variant="default" className="glow-neon hover:animate-glow-pulse">
+            <Button
+              variant="default"
+              className="glow-neon hover:animate-glow-pulse font-broaven"
+            >
               <Play className="w-4 h-4 mr-2" />
               Rejoindre GBÔ
             </Button>
@@ -65,13 +64,16 @@ const Navigation = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-foreground hover:text-primary transition-colors duration-300 font-medium py-2"
+                  className="text-foreground hover:text-primary transition-colors duration-300 font-broaven py-2"
                   onClick={toggleMenu}
                 >
                   {item.name}
                 </a>
               ))}
-              <Button variant="default" className="glow-neon w-full mt-4">
+              <Button
+                variant="default"
+                className="glow-neon w-full mt-4 font-broaven"
+              >
                 <Play className="w-4 h-4 mr-2" />
                 Rejoindre GBÔ
               </Button>

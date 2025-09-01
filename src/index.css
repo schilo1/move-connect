@@ -3,6 +3,20 @@
 @tailwind utilities;
 
 /* GBÔ Design System - Noir & Vert Néon Sportif */
+/* index.css or app.css */
+@font-face {
+  font-family: "Broaven";
+  src: url("/fonts/Broaven.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Broaven";
+  src: url("/fonts/Broaven Oblique.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
 
 @layer base {
   :root {
@@ -41,14 +55,22 @@
     --radius: 0.75rem;
 
     /* GBÔ Gradients Énergiques */
-    --gradient-primary: linear-gradient(135deg, hsl(72 94% 50%), hsl(72 94% 40%));
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(72 94% 50%),
+      hsl(72 94% 40%)
+    );
     --gradient-hero: linear-gradient(135deg, hsl(0 0% 0%), hsl(0 0% 10%));
-    --gradient-neon: radial-gradient(circle, hsl(72 94% 50% / 0.2), transparent);
-    
+    --gradient-neon: radial-gradient(
+      circle,
+      hsl(72 94% 50% / 0.2),
+      transparent
+    );
+
     /* GBÔ Shadows & Glows */
     --shadow-neon: 0 0 20px hsl(72 94% 50% / 0.3);
     --shadow-card: 0 10px 30px -5px hsl(0 0% 0% / 0.5);
-    
+
     /* GBÔ Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -74,23 +96,23 @@
   .glow-neon {
     box-shadow: var(--shadow-neon);
   }
-  
+
   .text-glow {
     text-shadow: 0 0 10px hsl(72 94% 50% / 0.5);
   }
-  
+
   .bg-gradient-primary {
     background: var(--gradient-primary);
   }
-  
+
   .bg-gradient-hero {
     background: var(--gradient-hero);
   }
-  
+
   .hover-scale {
     transition: var(--transition-smooth);
   }
-  
+
   .hover-scale:hover {
     transform: scale(1.05);
   }
