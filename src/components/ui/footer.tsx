@@ -12,11 +12,12 @@ import { Button } from "./button";
 
 const Footer = () => {
   const quickLinks = [
-    { name: "Accueil", href: "#accueil" },
-    { name: "À propos", href: "#apropos" },
-    { name: "Services", href: "#services" },
-    { name: "Témoignages", href: "#temoignages" },
-    { name: "Contact", href: "#contact" },
+    { name: "Accueil", href: "/" },
+    { name: "À propos", href: "/About" },
+    { name: "Nos Offres", href: "/Offres" },
+    // { name: "Témoignages", href: "#temoignages" },
+    { name: "Partenaires", href: "/Partner" },
+    { name: "Contact", href: "/Contact" },
   ];
 
   const services = [

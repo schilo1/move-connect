@@ -239,10 +239,16 @@ const ContactSection = () => {
                 <p className="text-muted-foreground mb-4 font-bold text-sm md:text-base">
                   Besoin d'une réponse immédiate ? Contactez-nous sur WhatsApp !
                 </p>
-                <Button className="bg-green-500 hover:bg-green-600 text-white hover:scale-105 transition-transform font-broaven w-full md:w-auto">
-                  <Phone className="w-4 h-4 mr-2" />
-                  WhatsApp
-                </Button>
+                <a
+                  href="https://wa.me/+2250788199542"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button className="bg-green-500 hover:bg-green-600 text-white hover:scale-105 transition-transform font-broaven w-full md:w-auto">
+                    <Phone className="w-4 h-4 mr-2" />
+                    WhatsApp
+                  </Button>
+                </a>
               </CardContent>
             </Card>
           </div>

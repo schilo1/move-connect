@@ -8,12 +8,12 @@ const Navigation = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   const navItems = [
-    { name: "Accueil", href: "#accueil" },
-    { name: "À propos", href: "#apropos" },
-    { name: "Services", href: "#services" },
-    { name: "Témoignages", href: "#temoignages" },
-    { name: "Partenaires", href: "#partenaires" },
-    { name: "Contact", href: "#contact" },
+    { name: "Accueil", href: "/" },
+    { name: "À propos", href: "/About" },
+    { name: "Nos Offres", href: "/Offres" },
+    // { name: "Témoignages", href: "#temoignages" },
+    { name: "Partenaires", href: "/Partner" },
+    { name: "Contact", href: "/Contact" },
   ];
 
   return (
@@ -36,13 +36,16 @@ const Navigation = () => {
                 {item.name}
               </a>
             ))}
-            <Button
-              variant="default"
-              className="glow-neon hover:animate-glow-pulse font-broaven"
-            >
-              <Play className="w-4 h-4 mr-2" />
-              Rejoindre GBÔ
-            </Button>
+            <a href="https://chat.whatsapp.com/Gkk6fY3AWxFGbD8ysJ0NV9?mode=ems_wa_c">
+              {" "}
+              <Button
+                variant="default"
+                className="glow-neon hover:animate-glow-pulse font-broaven"
+              >
+                <Play className="w-4 h-4 mr-2" />
+                Rejoindre GBÔ
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -70,13 +73,16 @@ const Navigation = () => {
                   {item.name}
                 </a>
               ))}
-              <Button
-                variant="default"
-                className="glow-neon w-full mt-4 font-broaven"
-              >
-                <Play className="w-4 h-4 mr-2" />
-                Rejoindre GBÔ
-              </Button>
+              <a href="https://chat.whatsapp.com/Gkk6fY3AWxFGbD8ysJ0NV9?mode=ems_wa_c">
+                {" "}
+                <Button
+                  variant="default"
+                  className="glow-neon w-full mt-4 font-broaven"
+                >
+                  <Play className="w-4 h-4 mr-2" />
+                  Rejoindre GBÔ
+                </Button>
+              </a>
             </div>
           </div>
         )}

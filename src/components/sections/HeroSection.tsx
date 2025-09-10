@@ -104,22 +104,26 @@ const HeroSection = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-              <Button
-                size="lg"
-                className="glow-neon hover:animate-glow-pulse group font-broaven"
-              >
-                <Play className="w-4 h-4 sm:w-5 sm:h-5 mr-2 group-hover:scale-110 transition-transform" />
-                Rejoignez GBÔ
-                <ArrowRight className="w-4 h-4 ml-1 sm:ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-              >
-                <Play className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-                Voir la vidéo
-              </Button>
+              <a href="https://chat.whatsapp.com/Gkk6fY3AWxFGbD8ysJ0NV9?mode=ems_wa_c">
+                <Button
+                  size="lg"
+                  className="glow-neon hover:animate-glow-pulse group font-broaven"
+                >
+                  <Play className="w-4 h-4 sm:w-5 sm:h-5 mr-2 group-hover:scale-110 transition-transform" />
+                  Rejoignez GBÔ
+                  <ArrowRight className="w-4 h-4 ml-1 sm:ml-2 group-hover:translate-x-1 transition-transform" />
+                </Button>{" "}
+              </a>
+              <a href="https://chat.whatsapp.com/Gkk6fY3AWxFGbD8ysJ0NV9?mode=ems_wa_c">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                >
+                  <Play className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
+                  Voir la vidéo
+                </Button>
+              </a>
             </div>
 
             {/* Stats */}
