@@ -109,40 +109,48 @@ const AboutSection = () => {
             <Card className="bg-card/80 backdrop-blur-sm border-border p-6">
               <CardContent className="space-y-4 p-0">
                 <h3 className="text-2xl font-bold text-foreground font-broaven">
-                  Notre Genèse
+                  À Propos de Nous : Notre Histoire, Notre Mission
                 </h3>
                 <p className="text-muted-foreground leading-relaxed font-semibold">
-                  GBÔ est né d'une conviction :{" "}
+                  Gbô est bien plus qu'un simple mouvement sportif. C'est une
+                  communauté passionnée et déterminée qui porte l'énergie du
+                  sport dans les cités, les rues et les salles de sport de Côte
+                  d'Ivoire. Chez Gbô, nous sommes plus qu'une équipe ; nous
+                  sommes une famille unie par la conviction que{" "}
                   <strong className="text-primary">
                     le sport doit être accessible à tous
                   </strong>
-                  . Dans un contexte où 65% des urbains ivoiriens ne pratiquent
-                  pas assez d'activité physique, nous proposons une alternative
-                  inclusive et abordable qui porte l'énergie du sport dans les
-                  cités, les rues et les salles de sport de Côte d'Ivoire.
+                  .
                 </p>
                 <p className="text-muted-foreground leading-relaxed font-semibold">
-                  Initialement lancé autour des{" "}
+                  Notre mission est claire :{" "}
                   <strong className="text-primary">
-                    protéines bio locales
-                  </strong>
-                  , GBÔ est aujourd'hui un écosystème sportif complet structuré
-                  autour de quatre piliers fondamentaux : la formation et
-                  certification des coachs, l'éducation communautaire, la
-                  création de liens sociaux et la promotion de produits locaux.
+                    personnaliser le coaching sportif
+                  </strong>{" "}
+                  en formant, certifiant et digitalisant les coachs ;{" "}
+                  <strong className="text-primary">éduquer et inspirer</strong>{" "}
+                  notre communauté via des contenus pratiques et la
+                  sensibilisation à la pratique du sport ;{" "}
+                  <strong className="text-primary">
+                    créer des liens sociaux
+                  </strong>{" "}
+                  autour de la musculation et du fitness ; et enfin,{" "}
+                  <strong className="text-primary">
+                    promouvoir des produits locaux
+                  </strong>{" "}
+                  pour un écosystème sportif durable.
                 </p>
                 <div className="bg-primary/5 rounded-lg p-4 border border-primary/20">
                   <p className="text-sm text-foreground font-semibold italic">
-                    "GBÔ, c'est une communauté passionnée et déterminée, un
-                    mouvement qui transforme la vision du fitness en Côte
-                    d'Ivoire."
+                    "GBÔ, c'est une famille qui transforme la vision du fitness
+                    en Côte d'Ivoire, un mouvement qui unit et inspire."
                   </p>
                 </div>
               </CardContent>
             </Card>
 
             {/* Stats */}
-            <div className="grid grid-cols-1 gap-4">
+            {/* <div className="grid grid-cols-1 gap-4">
               {stats.map((stat, index) => (
                 <Card
                   key={index}
@@ -158,7 +166,7 @@ const AboutSection = () => {
                   </CardContent>
                 </Card>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {/* Video Placeholder & Leadership */}

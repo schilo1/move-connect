@@ -127,7 +127,7 @@ const HeroSection = () => {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-3 sm:gap-6 pt-4 sm:pt-8">
+            {/* <div className="grid grid-cols-3 gap-3 sm:gap-6 pt-4 sm:pt-8">
               <div className="text-center">
                 <div className="text-xl sm:text-3xl font-bold text-primary text-glow font-broaven">
                   500+
@@ -152,7 +152,7 @@ const HeroSection = () => {
                   Événements
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

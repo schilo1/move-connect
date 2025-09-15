@@ -17,6 +17,8 @@ import CoachingEnLigne from "./pages/coaching-en-ligne";
 import CoachingADomicile from "./pages/coaching-a-domicile";
 import CoachPartenaire from "./pages/coach-partenaire";
 import GboNutrition from "./pages/gbo-nutrition";
+import ServicesSections from "./pages/ServicesSection";
+import ProductSections from "./pages/ProductSection";
 
 const queryClient = new QueryClient();
 
@@ -40,6 +42,8 @@ const App = () => (
           <Route path="/coaching-a-domicile" element={<CoachingADomicile />} />
           <Route path="/coach-partenaire" element={<CoachPartenaire />} />
           <Route path="/gbo-nutrition" element={<GboNutrition />} />
+          <Route path="/products" element={<ProductSections />} />
+          <Route path="/services" element={<ServicesSections />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

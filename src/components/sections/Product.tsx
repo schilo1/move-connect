@@ -11,19 +11,6 @@ import { Button } from "@/components/ui/button";
 const ProductSection = () => {
   const services = [
     {
-      icon: ShoppingBag,
-      title: "GBO Nutrition & Guide : Votre Partenaire Bien-Être",
-      description:
-        "Chez Gbô, nous savons que les résultats durables combinent sport et nutrition. Nos plans personnalisés et guides adaptés vous aident à atteindre vos objectifs de santé.",
-      features: [
-        "Vous nous donnez vos informations",
-        "Nous créons votre plan personnalisé",
-        "Vous recevez votre guide détaillé",
-      ],
-      cta: "Découvrir Nos Produits",
-      link: "/gbo-nutrition",
-    },
-    {
       icon: BarChart,
       title: "E-Gym : Optimisez la Gestion de Votre Salle",
       description:
@@ -129,7 +116,7 @@ const ProductSection = () => {
         </div>
 
         {/* Products Grid */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        {/* <div className="grid md:grid-cols-3 gap-8 mb-16">
           {services.map((service, index) => (
             <Card
               key={index}
@@ -169,7 +156,7 @@ const ProductSection = () => {
               </CardContent>
             </Card>
           ))}
-        </div>
+        </div> */}
 
         {/* E-Gym Details */}
         <section className="mb-16">

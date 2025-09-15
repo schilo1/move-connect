@@ -33,7 +33,7 @@ const ServicesSection = () => {
         "Séances via Zoom, Teams ou Meet",
       ],
       cta: "Réservez Votre Séance d'Essai Gratuite",
-      link: "/coaching-en-ligne",
+      link: "https://wa.me/+2250788199542",
     },
     {
       icon: Home,
@@ -47,7 +47,7 @@ const ServicesSection = () => {
         "Accompagnement sur-mesure",
       ],
       cta: "Réservez Votre Séance d'Essai Gratuite",
-      link: "/coaching-a-domicile",
+      link: "https://wa.me/+2250788199542",
     },
     {
       icon: Home,
@@ -59,7 +59,7 @@ const ServicesSection = () => {
         "Cadre dédié",
       ],
       cta: "Découvrez les Packs en Salle",
-      link: "/coaching-en-salle",
+      link: "https://wa.me/+2250788199542",
     },
     {
       icon: ShoppingBag,
@@ -117,6 +117,19 @@ const ServicesSection = () => {
       ],
       cta: "Rejoignez le Réseau GBO",
       link: "/partenariat-salle",
+    },
+    {
+      icon: ShoppingBag,
+      title: "GBO Nutrition & Guide : Votre Partenaire Bien-Être",
+      description:
+        "Chez Gbô, nous savons que les résultats durables combinent sport et nutrition. Nos plans personnalisés et guides adaptés vous aident à atteindre vos objectifs de santé.",
+      features: [
+        "Vous nous donnez vos informations",
+        "Nous créons votre plan personnalisé",
+        "Vous recevez votre guide détaillé",
+      ],
+      cta: "Découvrir Nos Produits",
+      link: "/gbo-nutrition",
     },
   ];
 
