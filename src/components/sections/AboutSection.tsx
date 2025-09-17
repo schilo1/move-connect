@@ -536,14 +536,18 @@ const AboutSection = () => {
               <div className="flex items-center gap-2">
                 <Shield className="w-6 h-6 text-primary" />
                 <h3 className="text-xl font-bold text-foreground font-broaven">
-                  Notre Impact
+                  Notre Engagement
                 </h3>
               </div>
               <p className="text-muted-foreground font-semibold leading-relaxed">
-                Pour vous, nos adeptes, nous avons créé un écosystème complet
-                qui rend le sport accessible, motivant et durable. GBÔ s'engage
-                à transformer durablement l'écosystème sportif ivoirien en
-                plaçant l'humain au centre de sa démarche.
+                Notre ambition est de devenir le mouvement sportif leader en
+                Côte d'Ivoire et en Afrique francophone. Cet engagement repose
+                sur deux piliers : Impact social et économique : Nous croyons
+                fermement à l'essor d'une économie locale saine. En
+                commercialisant E-GYM, notre logiciel de gestion dédiée aux
+                salles de sport. En équipant les gérants de salles de sport d'un
+                outil de gestion performant, nous leur permettons de développer
+                leur activité.
               </p>
               <div className="bg-primary/5 rounded-lg p-4 border border-primary/20">
                 <p className="text-sm text-primary font-semibold">

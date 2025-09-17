@@ -35,7 +35,8 @@ const ProductSection = () => {
       history: false,
       calendar: false,
       medical: false,
-      price: "15 000 FCFA/mois",
+      price: "19 500 FCFA/mois",
+      discountedPrice: "15 015 FCFA/mois",
     },
     {
       name: "Premium",
@@ -45,7 +46,8 @@ const ProductSection = () => {
       history: true,
       calendar: true,
       medical: true,
-      price: "25 000 FCFA/mois",
+      price: "32 500 FCFA/mois",
+      discountedPrice: "25 025 FCFA/mois",
     },
     {
       name: "Platinium",
@@ -55,7 +57,8 @@ const ProductSection = () => {
       history: true,
       calendar: true,
       medical: true,
-      price: "40 000 FCFA/mois",
+      price: "65 000 FCFA/mois",
+      discountedPrice: "50 050 FCFA/mois",
     },
   ];
 
@@ -114,49 +117,6 @@ const ProductSection = () => {
             produits vous offrent le soutien nécessaire pour réussir.
           </p>
         </div>
-
-        {/* Products Grid */}
-        {/* <div className="grid md:grid-cols-3 gap-8 mb-16">
-          {services.map((service, index) => (
-            <Card
-              key={index}
-              className="group hover:shadow-neon transition-all duration-300 hover:-translate-y-2 bg-card/80 backdrop-blur-sm border-border hover:border-primary/50 animate-fade-in-up"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <CardHeader className="space-y-4">
-                <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <service.icon className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <CardTitle className="text-xl font-bold text-foreground group-hover:text-primary transition-colors font-broaven">
-                    {service.title}
-                  </CardTitle>
-                  <CardDescription className="text-muted-foreground mt-2 font-semibold">
-                    {service.description}
-                  </CardDescription>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2">
-                  {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center gap-2 text-sm">
-                      <div className="w-2 h-2 bg-primary rounded-full"></div>
-                      <span className="text-foreground">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <a href={service.link}>
-                  <Button
-                    variant="outline"
-                    className="w-full mt-6 border-primary/30 hover:bg-primary hover:text-primary-foreground group-hover:glow-neon"
-                  >
-                    {service.cta}
-                  </Button>
-                </a>
-              </CardContent>
-            </Card>
-          ))}
-        </div> */}
 
         {/* E-Gym Details */}
         <section className="mb-16">
@@ -224,6 +184,10 @@ const ProductSection = () => {
                   <h3 className="text-lg font-semibold text-foreground font-broaven mb-4">
                     Nos Offres
                   </h3>
+                  <p className="text-sm text-muted-foreground mb-4">
+                    Profitez d’une remise de 23% sur toutes nos offres en cas de
+                    partenariat avec GBO.
+                  </p>
                   <div className="grid md:grid-cols-3 gap-6">
                     {eGymPlans.map((plan, idx) => (
                       <Card
@@ -236,7 +200,10 @@ const ProductSection = () => {
                             {plan.name}
                           </CardTitle>
                           <CardDescription className="text-muted-foreground mt-2 font-semibold">
-                            {plan.price}
+                            {plan.price} <br />
+                            <span className="text-primary">
+                              Avec GBO : {plan.discountedPrice}
+                            </span>
                           </CardDescription>
                         </CardHeader>
                         <CardContent>
