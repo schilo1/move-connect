@@ -190,11 +190,18 @@ const CoachPartenaire = () => {
           <h2 className="text-3xl font-bold text-center text-foreground font-broaven mb-8">
             Prêt à Faire Partie de l'Aventure ?
           </h2>
-          <div className="flex justify-center mt-8">
-            <Button className="w-full md:w-1/2 border-primary/30 hover:bg-primary hover:text-primary-foreground glow-neon font-broaven">
-              Contacter nous sur whatsapp
-            </Button>
-          </div>
+          <a
+            href="https://wa.me/+2250788199542"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="flex justify-center mt-8">
+              <Button className="w-full md:w-1/2 border-primary/30 hover:bg-primary hover:text-primary-foreground glow-neon font-broaven">
+                Contacter nous sur whatsapp
+              </Button>
+            </div>
+          </a>
+
           {/* <Card className="max-w-3xl mx-auto bg-card/80 backdrop-blur-sm border-border hover:border-primary/50">
             <CardHeader>
               <CardTitle className="text-xl font-bold text-foreground font-broaven">
