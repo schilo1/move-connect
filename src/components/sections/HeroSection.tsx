@@ -92,11 +92,10 @@ const HeroSection = () => {
               </h1>
               {/* Short text on mobile, full text on desktop */}
               <p className="hidden sm:block text-lg lg:text-xl text-muted-foreground max-w-lg leading-relaxed font-semibold">
-                GBÔ, c'est bien plus qu'une plateforme sportive. C'est un
-                mouvement qui démocratise l'accès au fitness et à la musculation
-                en Côte d'Ivoire. Coaching, nutrition, e-commerce et événements
-                communautaires : nous transformons le sport en une expérience
-                accessible et inspirante.
+                Le mouvement sportif qui démocratise le fitness et la
+                musculation en Côte d'Ivoire. Nous sommes bien plus qu'une
+                simple plateforme : nous sommes un écosystème qui transforme le
+                sport en une expérience accessible et inspirante pour tous.
               </p>
               <p className="block sm:hidden text-sm text-muted-foreground max-w-sm font-bold">
                 GBÔ démocratise le fitness et la musculation en Côte d'Ivoire.
@@ -127,10 +126,10 @@ const HeroSection = () => {
             </div>
 
             {/* Stats */}
-            {/* <div className="grid grid-cols-3 gap-3 sm:gap-6 pt-4 sm:pt-8">
+            <div className="grid grid-cols-3 gap-3 sm:gap-6 pt-4 sm:pt-8">
               <div className="text-center">
                 <div className="text-xl sm:text-3xl font-bold text-primary text-glow font-broaven">
-                  500+
+                  30+
                 </div>
                 <div className="text-xs sm:text-sm text-muted-foreground font-broaven">
                   Membres
@@ -138,7 +137,7 @@ const HeroSection = () => {
               </div>
               <div className="text-center">
                 <div className="text-xl sm:text-3xl font-bold text-primary text-glow font-broaven">
-                  50+
+                  10+
                 </div>
                 <div className="text-xs sm:text-sm text-muted-foreground font-broaven">
                   Coachs
@@ -146,13 +145,13 @@ const HeroSection = () => {
               </div>
               <div className="text-center">
                 <div className="text-xl sm:text-3xl font-bold text-primary text-glow font-broaven">
-                  100+
+                  10+
                 </div>
                 <div className="text-xs sm:text-sm text-muted-foreground font-broaven">
                   Événements
                 </div>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

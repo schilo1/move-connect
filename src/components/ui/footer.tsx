@@ -21,11 +21,11 @@ const Footer = () => {
   ];
 
   const services = [
-    "Coaching Personnel",
-    "E-commerce Fitness",
-    "Nutrition Bio",
-    "Événements Communautaires",
-    "Formation Coachs",
+    "Coaching Personnalisé",
+    "Gbo Fitness",
+    "Gbo nutrition et guide",
+    "Gbo Challenge",
+    "E-Gym",
   ];
 
   const socialLinks = [

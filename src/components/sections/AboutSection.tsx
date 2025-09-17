@@ -193,7 +193,7 @@ const AboutSection = () => {
             </Card>
 
             {/* Leadership Team */}
-            <Card className="bg-card/80 backdrop-blur-sm border-border">
+            {/* <Card className="bg-card/80 backdrop-blur-sm border-border">
               <CardContent className="p-6 space-y-4">
                 <h3 className="text-xl font-bold text-foreground font-broaven">
                   Direction Générale
@@ -213,7 +213,7 @@ const AboutSection = () => {
                   </div>
                 </div>
 
-                {/* Department Heads */}
+    
                 <div className="space-y-3">
                   <h4 className="text-sm font-semibold text-foreground opacity-80 font-broaven">
                     Responsables Départements
@@ -273,12 +273,12 @@ const AboutSection = () => {
                   Voir l'organigramme complet
                 </Button>
               </CardContent>
-            </Card>
+            </Card> */}
           </div>
         </div>
 
         {/* Core Pillars */}
-        <div className="mb-16 animate-fade-in-up">
+        {/* <div className="mb-16 animate-fade-in-up">
           <div className="text-center space-y-4 mb-12">
             <h3 className="text-3xl font-bold text-foreground font-broaven">
               Nos{" "}
@@ -312,7 +312,7 @@ const AboutSection = () => {
               </Card>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Mission, Vision, Objectifs */}
         <div className="grid md:grid-cols-3 gap-8 mb-16 animate-fade-in-up">
@@ -338,7 +338,7 @@ const AboutSection = () => {
         </div>
 
         {/* Organizational Structure */}
-        <div className="mb-16 animate-fade-in-up">
+        {/* <div className="mb-16 animate-fade-in-up">
           <Card className="bg-card/80 backdrop-blur-sm border-border">
             <CardContent className="p-8">
               <div className="text-center space-y-6">
@@ -436,7 +436,7 @@ const AboutSection = () => {
               </div>
             </CardContent>
           </Card>
-        </div>
+        </div> */}
 
         {/* Values Banner */}
         <Card className="mb-16 bg-gradient-to-r from-primary/10 via-primary/5 to-transparent border-primary/30 glow-neon animate-fade-in-up">
@@ -492,29 +492,39 @@ const AboutSection = () => {
                   Notre Impact
                 </h3>
               </div>
+              <p className="text-muted-foreground font-semibold leading-relaxed">
+                Chez GBÔ, nous sommes convaincus que le sport a le pouvoir de
+                transformer des vies. Nous ne nous contentons pas de vous
+                inspirer ; nous construisons une structure qui permet à chacun
+                d’agir. Notre plus grande fierté est de voir ces efforts se
+                traduire en vies plus saines et plus épanouies.
+              </p>
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-start gap-3">
                   <Star className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
                   <span className="font-semibold">
-                    Plus de 500 membres actifs dans notre écosystème sportif
+                    <strong className="text-primary">Personnalisation :</strong>{" "}
+                    Nous connectons des milliers d'Ivoiriens à des coachs
+                    certifiés, qui personnalisent le parcours de chacun en
+                    fonction de son niveau et de ses objectifs.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Star className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
                   <span className="font-semibold">
-                    Coachs certifiés et formés selon nos standards d'excellence
+                    <strong className="text-primary">Éducation :</strong> Nous
+                    vous donnons accès à des contenus pratiques sur le coaching,
+                    la nutrition et l'hygiène de vie, vous permettant de faire
+                    des choix éclairés.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Star className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
                   <span className="font-semibold">
-                    Promotion active des produits bio locaux ivoiriens
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Star className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span className="font-semibold">
-                    Création de liens sociaux durables autour du fitness
+                    <strong className="text-primary">Communauté :</strong> Vous
+                    n'êtes plus seul. GBÔ, c'est un lien social fort qui vous
+                    permet de vous motiver, de partager vos victoires et de vous
+                    sentir appartenir à un mouvement.
                   </span>
                 </li>
               </ul>
@@ -526,14 +536,14 @@ const AboutSection = () => {
               <div className="flex items-center gap-2">
                 <Shield className="w-6 h-6 text-primary" />
                 <h3 className="text-xl font-bold text-foreground font-broaven">
-                  Notre Engagement
+                  Notre Impact
                 </h3>
               </div>
               <p className="text-muted-foreground font-semibold leading-relaxed">
-                GBÔ s'engage à transformer durablement l'écosystème sportif
-                ivoirien en plaçant l'humain au centre de sa démarche. Nous
-                croyons qu'un corps sain contribue à un esprit sain et à une
-                société plus harmonieuse.
+                Pour vous, nos adeptes, nous avons créé un écosystème complet
+                qui rend le sport accessible, motivant et durable. GBÔ s'engage
+                à transformer durablement l'écosystème sportif ivoirien en
+                plaçant l'humain au centre de sa démarche.
               </p>
               <div className="bg-primary/5 rounded-lg p-4 border border-primary/20">
                 <p className="text-sm text-primary font-semibold">

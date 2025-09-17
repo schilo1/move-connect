@@ -40,7 +40,7 @@ const TestimonialsSection = () => {
   const achievements = [
     {
       icon: Trophy,
-      title: "500+ Transformations",
+      title: "10+ Transformations",
       description: "Membres ayant atteint leurs objectifs",
     },
     {
@@ -50,7 +50,7 @@ const TestimonialsSection = () => {
     },
     {
       icon: Star,
-      title: "50+ Coachs Actifs",
+      title: "10+ Coachs Actifs",
       description: "Professionnels certifiés disponibles",
     },
   ];
