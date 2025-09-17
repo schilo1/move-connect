@@ -185,8 +185,8 @@ const ProductSection = () => {
                     Nos Offres
                   </h3>
                   <p className="text-sm text-muted-foreground mb-4">
-                    Profitez d’une remise de 23% sur toutes nos offres en cas de
-                    partenariat avec GBO.
+                    Profitez d’une remise exclusive de 23% sur toutes nos offres
+                    en cas de partenariat avec GBO !
                   </p>
                   <div className="grid md:grid-cols-3 gap-6">
                     {eGymPlans.map((plan, idx) => (
@@ -200,10 +200,17 @@ const ProductSection = () => {
                             {plan.name}
                           </CardTitle>
                           <CardDescription className="text-muted-foreground mt-2 font-semibold">
-                            {plan.price} <br />
-                            <span className="text-primary">
-                              Avec GBO : {plan.discountedPrice}
+                            <span className="line-through text-muted-foreground/70">
+                              {plan.price}
                             </span>
+                            <div className="flex items-center gap-2">
+                              <span className="text-primary text-lg font-bold">
+                                {plan.discountedPrice}
+                              </span>
+                              <span className="bg-primary/10 text-primary text-xs font-semibold px-2 py-1 rounded-full">
+                                -23% avec GBO
+                              </span>
+                            </div>
                           </CardDescription>
                         </CardHeader>
                         <CardContent>
