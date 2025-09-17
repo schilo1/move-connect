@@ -27,18 +27,18 @@ const PartnersSection = () => {
           rating: 4.8,
           locations: "3 centres",
         },
-        {
-          name: "WOLF-ACADEMY GROUP",
-          logo: "BestGym.png",
-          description: "Académie de formation sportive d'excellence",
-          features: [
-            "Formation professionnelle",
-            "Arts martiaux",
-            "Préparation physique",
-          ],
-          rating: 4.9,
-          locations: "2 centres",
-        },
+        // {
+        //   name: "WOLF-ACADEMY GROUP",
+        //   logo: "BestGym.png",
+        //   description: "Académie de formation sportive d'excellence",
+        //   features: [
+        //     "Formation professionnelle",
+        //     "Arts martiaux",
+        //     "Préparation physique",
+        //   ],
+        //   rating: 4.9,
+        //   locations: "2 centres",
+        // },
       ],
     },
   ];
