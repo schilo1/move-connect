@@ -1,4 +1,4 @@
-import { Trophy, Calendar, MapPin, Users } from "lucide-react";
+import { Trophy, Users, MapPin, Calendar } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -9,28 +9,34 @@ import {
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/ui/navigation";
 import Footer from "@/components/ui/footer";
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const GboChallenge = () => {
   const nextEvent = {
-    quartier: "Cocody, Angré",
-    date: "Samedi 18 octobre 2025, 17h00",
-    lieu: "Terrain de sport de la Cité Mahou",
+    quartier: "Abobo, Dokui",
     epreuve: "Concours de pompes et de gainage",
   };
 
   const pastEvents = [
     {
       quartier: "Abobo, Dokui",
-      date: "Samedi 11 octobre 2025",
       description: "Défi de vitesse et d'agilité",
-      image: "https://via.placeholder.com/300x200?text=Past+Event+1",
+      image: "/image1.png",
     },
     {
       quartier: "Cocody, Riviera",
-      date: "Samedi 4 octobre 2025",
       description: "Concours de tractions",
-      image: "https://via.placeholder.com/300x200?text=Past+Event+2",
+      image: "/image2.png",
+    },
+    {
+      quartier: "Abobo, Dokui",
+      description: "Défi de cardio et endurance",
+      image: "/image3.png",
+    },
+    {
+      quartier: "Abobo, Dokui",
+      description: "Concours de squats et fentes",
+      image: "/image4.png",
     },
   ];
 
@@ -51,6 +57,34 @@ const GboChallenge = () => {
         "T-shirts, gourdes et autres accessoires exclusifs Gbô Challenge.",
     },
   ];
+
+  // Slider state
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % pastEvents.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide(
+      (prev) => (prev - 1 + pastEvents.length) % pastEvents.length
+    );
+  };
+
+  const goToSlide = (index) => {
+    setCurrentSlide(index);
+  };
+
+  // Automatic sliding
+  useEffect(() => {
+    if (!isPaused) {
+      const interval = setInterval(() => {
+        nextSlide();
+      }, 5000); // Slide every 5 seconds
+      return () => clearInterval(interval);
+    }
+  }, [isPaused]);
 
   return (
     <div className="min-h-screen bg-background">
@@ -148,13 +182,11 @@ const GboChallenge = () => {
               </CardTitle>
               <CardDescription className="text-muted-foreground mt-2 font-semibold">
                 <p>
-                  <strong>Date et Heure :</strong> {nextEvent.date}
-                </p>
-                <p>
-                  <strong>Lieu :</strong> {nextEvent.lieu}
-                </p>
-                <p>
                   <strong>Épreuve :</strong> {nextEvent.epreuve}
+                </p>
+                <p>
+                  Participez pour gagner des lots incroyables et découvrez nos
+                  défis dans plusieurs communes d'Abidjan !
                 </p>
               </CardDescription>
             </CardHeader>
@@ -176,32 +208,98 @@ const GboChallenge = () => {
           <h2 className="text-3xl font-bold text-center text-foreground font-broaven mb-8">
             Événements Passés
           </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            {pastEvents.map((event, index) => (
-              <Card
-                key={index}
-                className="group hover:shadow-neon transition-all duration-300 hover:-translate-y-2 bg-card/80 backdrop-blur-sm border-border hover:border-primary/50 animate-fade-in-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
+          <Card className="bg-card/80 backdrop-blur-sm border-border hover:border-primary/50 animate-fade-in-up">
+            <CardContent className="p-8">
+              <div
+                className="relative"
+                onMouseEnter={() => setIsPaused(true)}
+                onMouseLeave={() => setIsPaused(false)}
               >
-                <CardHeader>
-                  <img
-                    src={event.image}
-                    alt={`Événement à ${event.quartier}`}
-                    className="w-full h-48 object-cover rounded-t-lg"
-                  />
-                  <CardTitle className="text-xl font-bold text-foreground group-hover:text-primary transition-colors font-broaven mt-4">
-                    {event.quartier}
-                  </CardTitle>
-                  <CardDescription className="text-muted-foreground mt-2 font-semibold">
-                    <p>
-                      <strong>Date :</strong> {event.date}
-                    </p>
-                    <p>{event.description}</p>
-                  </CardDescription>
-                </CardHeader>
-              </Card>
-            ))}
-          </div>
+                {/* Slider */}
+                <div className="overflow-hidden rounded-xl">
+                  <div
+                    className="flex transition-transform duration-500 ease-in-out"
+                    style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+                  >
+                    {pastEvents.map((event, index) => (
+                      <div key={index} className="min-w-full">
+                        <div className="relative flex flex-col md:flex-row items-center gap-8">
+                          <div className="w-full md:w-1/2">
+                            <img
+                              src={event.image}
+                              alt={`Événement à ${event.quartier}`}
+                              className="w-full h-96 object-cover rounded-lg transform transition-transform duration-500 hover:scale-105"
+                            />
+                          </div>
+                          <div className="w-full md:w-1/2 bg-black/50 backdrop-blur-sm p-6 rounded-lg">
+                            <h3 className="text-2xl font-bold text-white font-broaven mb-2">
+                              {event.quartier}
+                            </h3>
+                            <p className="text-gray-200 font-semibold">
+                              {event.description}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Navigation Arrows */}
+                <button
+                  onClick={prevSlide}
+                  className="absolute top-1/2 -left-12 transform -translate-y-1/2 bg-primary/30 hover:bg-primary/60 text-primary-foreground p-3 rounded-full transition-all duration-300 glow-neon"
+                >
+                  <svg
+                    className="w-8 h-8"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M15 19l-7-7 7-7"
+                    />
+                  </svg>
+                </button>
+                <button
+                  onClick={nextSlide}
+                  className="absolute top-1/2 -right-12 transform -translate-y-1/2 bg-primary/30 hover:bg-primary/60 text-primary-foreground p-3 rounded-full transition-all duration-300 glow-neon"
+                >
+                  <svg
+                    className="w-8 h-8"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </button>
+
+                {/* Dots */}
+                <div className="flex justify-center mt-6 space-x-3">
+                  {pastEvents.map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => goToSlide(index)}
+                      className={`w-4 h-4 rounded-full transition-all duration-300 transform hover:scale-125 ${
+                        currentSlide === index
+                          ? "bg-primary scale-125"
+                          : "bg-primary/30 hover:bg-primary/50"
+                      }`}
+                    />
+                  ))}
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </section>
 
         {/* Rewards */}
@@ -230,6 +328,35 @@ const GboChallenge = () => {
         </section>
       </main>
       <Footer />
+
+      <style jsx>{`
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        .animate-fade-in-up {
+          animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .glow-neon {
+          box-shadow: 0 0 20px rgba(var(--primary), 0.1);
+        }
+
+        .hover:shadow-neon:hover {
+          box-shadow: 0 0 30px rgba(var(--primary), 0.2);
+        }
+
+        .text-glow {
+          text-shadow: 0 0 20px rgba(var(--primary), 0.5);
+        }
+      `}</style>
     </div>
   );
 };
