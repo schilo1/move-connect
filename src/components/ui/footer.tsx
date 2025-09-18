@@ -16,7 +16,7 @@ const Footer = () => {
     { name: "À propos", href: "/About" },
     { name: "Nos Offres", href: "/Offres" },
     // { name: "Témoignages", href: "#temoignages" },
-    { name: "Partenaires", href: "/Partner" },
+    { name: "Partenariats", href: "/Partner" },
     { name: "Contact", href: "/Contact" },
   ];
 
@@ -167,8 +167,8 @@ const Footer = () => {
         <div className="py-6 border-t border-border">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="text-sm text-muted-foreground text-center md:text-left">
-              © 2025 GBÔ. Tous droits réservés. • Fitness accessible pour tous
-              les Ivoiriens
+              © 2025 GBÔ. Tous droits réservés. • Fitness et musculation
+              accessible pour tous les Ivoiriens
             </div>
             <div className="flex gap-6 text-sm text-muted-foreground">
               <a href="#" className="hover:text-primary transition-colors">

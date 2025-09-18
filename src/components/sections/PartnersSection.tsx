@@ -161,7 +161,7 @@ const PartnersSection = () => {
                             </div>
                             <div className="flex items-center gap-1 text-muted-foreground text-sm">
                               <MapPin className="w-3 h-3" />
-                              <span>{partner.locations}</span>
+                              <span>AVOCATIER CARREFOUR NIAMKEY</span>
                             </div>
                           </div>
                         </div>

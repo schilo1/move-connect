@@ -121,7 +121,8 @@ const ServicesSection = () => {
     // },
     {
       icon: ShoppingBag,
-      title: "GBO Nutrition & Guide : Votre Partenaire Bien-Être",
+      title:
+        "GBO Nutrition & Guide : Votre Partenaire Bien-Être (Bientôt Disponible)",
       description:
         "Chez Gbô, nous savons que les résultats durables combinent sport et nutrition. Nos plans personnalisés et guides adaptés vous aident à atteindre vos objectifs de santé.",
       features: [
