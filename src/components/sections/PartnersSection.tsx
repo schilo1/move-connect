@@ -6,6 +6,8 @@ import {
   Star,
   Trophy,
   Award,
+  Phone,
+  Clock,
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -19,26 +21,12 @@ const PartnersSection = () => {
           name: "BEST-GYM",
           logo: "WolfAcademy.png",
           description: "Réseau de salles de sport premium",
-          features: [
-            "Équipements modernes",
-            "Coaching personnalisé",
-            "Cours collectifs",
-          ],
+          features: ["FITNESS", "MUSCULATION", "BOXE", "REEDUCATION"],
           rating: 4.8,
           locations: "3 centres",
+          contacts: ["07 08 03 24 41", "05 05 27 80 70"],
+          hours: "06H-21H, Ouvert 7j/7",
         },
-        // {
-        //   name: "WOLF-ACADEMY GROUP",
-        //   logo: "BestGym.png",
-        //   description: "Académie de formation sportive d'excellence",
-        //   features: [
-        //     "Formation professionnelle",
-        //     "Arts martiaux",
-        //     "Préparation physique",
-        //   ],
-        //   rating: 4.9,
-        //   locations: "2 centres",
-        // },
       ],
     },
   ];
@@ -200,6 +188,36 @@ const PartnersSection = () => {
                                 </span>
                               </div>
                             ))}
+                          </div>
+                        </div>
+
+                        {/* Contact Information */}
+                        <div className="mt-6 pt-4 border-t border-border/50">
+                          <h4 className="text-lg font-semibold text-foreground flex items-center gap-2 mb-4">
+                            <Phone className="w-5 h-5 text-primary" />
+                            Contactez BEST-GYM
+                          </h4>
+                          <div className="grid gap-3">
+                            <div className="flex items-center gap-3 p-3 bg-muted/20 rounded-lg border border-muted/50 hover:border-primary/30 hover:bg-primary/5 transition-all duration-300">
+                              <Phone className="w-4 h-4 text-primary flex-shrink-0" />
+                              <div className="flex flex-col">
+                                {partner.contacts.map((contact, contactIdx) => (
+                                  <a
+                                    key={contactIdx}
+                                    href={`tel:${contact}`}
+                                    className="font-medium text-foreground hover:text-primary transition-colors"
+                                  >
+                                    {contact}
+                                  </a>
+                                ))}
+                              </div>
+                            </div>
+                            <div className="flex items-center gap-3 p-3 bg-muted/20 rounded-lg border border-muted/50 hover:border-primary/30 hover:bg-primary/5 transition-all duration-300">
+                              <Clock className="w-4 h-4 text-primary flex-shrink-0" />
+                              <span className="font-medium text-foreground">
+                                {partner.hours}
+                              </span>
+                            </div>
                           </div>
                         </div>
 

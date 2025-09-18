@@ -23,7 +23,7 @@ const ServicesSection = () => {
   const services = [
     {
       icon: Video,
-      title: "Coaching en Ligne",
+      title: "Coaching en Ligne (Bientôt Disponible)",
       description:
         "Flexibilité et accessibilité. Atteignez vos objectifs, où que vous soyez grâce à des sessions en visioconférence.",
       features: [
@@ -37,7 +37,7 @@ const ServicesSection = () => {
     },
     {
       icon: Home,
-      title: "Coaching Privé à Domicile",
+      title: "Coaching Privé à Domicile (Bientôt Disponible)",
       description:
         "Présence, confort, efficacité et motivation. Une approche personnalisée pour des résultats concrets.",
       features: [
@@ -51,7 +51,7 @@ const ServicesSection = () => {
     },
     {
       icon: Home,
-      title: "Coaching en salle de sport partenaire",
+      title: "Coaching en salle de sport partenaire (Bientôt Disponible)",
       description: "L'Environnement de la Performance",
       features: [
         "Accès à des équipements professionnels",
@@ -63,7 +63,8 @@ const ServicesSection = () => {
     },
     {
       icon: ShoppingBag,
-      title: "GBO FITNESS : LE SPORT AU CŒUR DE VOTRE CITE",
+      title:
+        "GBO FITNESS : LE SPORT AU CŒUR DE VOTRE CITE (Bientôt Disponible)",
       description:
         "Gbô Fitness est votre rendez-vous bien-être et performance, à deux pas de chez vous.",
       features: [

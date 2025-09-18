@@ -19,22 +19,22 @@ const GboChallenge = () => {
 
   const pastEvents = [
     {
-      quartier: "Abobo",
+      quartier: "Abobo Akeikoi",
       description: "Défi de force",
       image: "/image1.png",
     },
     {
-      quartier: "Cocody, Riviera",
+      quartier: "Abobo Akeikoi",
       description: "Défi de force",
       image: "/image2.png",
     },
     {
-      quartier: "Abobo, Dokui",
+      quartier: "Abobo Akeikoi",
       description: "Défi de force",
       image: "/image3.png",
     },
     {
-      quartier: "Abobo, Dokui",
+      quartier: "Abobo, 4 etages",
       description: "Défi de force",
       image: "/image4.png",
     },
