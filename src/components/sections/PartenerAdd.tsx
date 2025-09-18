@@ -32,7 +32,7 @@ const Partneradd = () => {
         "Flexibilité et liberté",
         "Une collaboration fructueuse",
       ],
-      cta: "Rejoignez le Réseau GBO",
+      cta: "Rejoignez le Réseau GBÔ",
       link: "/coach-partenaire",
     },
     {
@@ -46,7 +46,7 @@ const Partneradd = () => {
         "Technologie et Optimisation avec E-Gym",
         "Passez à l'Action : Devenons Partenaires",
       ],
-      cta: "Rejoignez le Réseau GBO",
+      cta: "Rejoignez le Réseau GBÔ",
       link: "/partenariat-salle",
     },
   ];
