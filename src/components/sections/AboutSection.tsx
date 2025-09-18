@@ -112,38 +112,51 @@ const AboutSection = () => {
                   À Propos de Nous : Notre Histoire, Notre Mission
                 </h3>
                 <p className="text-muted-foreground leading-relaxed font-semibold">
-                  Gbô est bien plus qu'un simple mouvement sportif. C'est une
-                  communauté passionnée et déterminée qui porte l'énergie du
-                  sport dans les cités, les rues et les salles de sport de Côte
-                  d'Ivoire. Chez Gbô, nous sommes plus qu'une équipe ; nous
-                  sommes une famille unie par la conviction que{" "}
+                  Chez GBÔ, nous sommes bien plus qu’un mouvement sportif. Nous
+                  sommes le pont qui relie les passionnés et les professionnels
+                  qui portent l’énergie du sport en Côte d’Ivoire. GBÔ est né
+                  d’une conviction simple :{" "}
                   <strong className="text-primary">
                     le sport doit être accessible à tous
                   </strong>
-                  .
+                  . Dans un pays où la majorité des citadins n’ont pas une
+                  activité physique suffisante, nous avons voulu créer un
+                  mouvement, un déclic, un réveil.
                 </p>
                 <p className="text-muted-foreground leading-relaxed font-semibold">
-                  Notre mission est claire :{" "}
+                  Combien de fois avons-nous repoussé à demain ce moment pour
+                  prendre soin de notre corps ? Combien de fois nous sommes-nous
+                  sentis seuls face à nos objectifs de bien-être ? GBÔ est né de
+                  cette réalité, non pas pour impressionner, mais pour{" "}
                   <strong className="text-primary">
-                    personnaliser le coaching sportif
-                  </strong>{" "}
-                  en formant, certifiant et digitalisant les coachs ;{" "}
-                  <strong className="text-primary">éduquer et inspirer</strong>{" "}
-                  notre communauté via des contenus pratiques et la
-                  sensibilisation à la pratique du sport ;{" "}
+                    accompagner, motiver et transformer
+                  </strong>
+                  . Ici, tout le monde a sa place. Pas besoin d’être un expert,
+                  juste d’être prêt à bouger, à retrouver confiance, énergie et
+                  équilibre.
+                </p>
+                <p className="text-muted-foreground leading-relaxed font-semibold">
+                  Nous lançons un mouvement où le sport ressemble à votre
+                  réalité, respecte votre rythme et célèbre chaque victoire,
+                  petite ou grande. À travers nos vidéos et contenus, nous
+                  abordons des thèmes essentiels pour une vie saine :{" "}
                   <strong className="text-primary">
-                    créer des liens sociaux
-                  </strong>{" "}
-                  autour de la musculation et du fitness ; et enfin,{" "}
+                    transformation et motivation
+                  </strong>
+                  ,{" "}
                   <strong className="text-primary">
-                    promouvoir des produits locaux
-                  </strong>{" "}
-                  pour un écosystème sportif durable.
+                    éducation et pédagogie
+                  </strong>
+                  ,{" "}
+                  <strong className="text-primary">
+                    alimentation et hygiène de vie
+                  </strong>
+                  .
                 </p>
                 <div className="bg-primary/5 rounded-lg p-4 border border-primary/20">
                   <p className="text-sm text-foreground font-semibold italic">
-                    "GBÔ, c'est une famille qui transforme la vision du fitness
-                    en Côte d'Ivoire, un mouvement qui unit et inspire."
+                    "GBÔ, c’est une famille qui transforme la vision du fitness
+                    en Côte d’Ivoire, un mouvement qui unit et inspire."
                   </p>
                 </div>
               </CardContent>
@@ -522,7 +535,7 @@ const AboutSection = () => {
                   <Star className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
                   <span className="font-semibold">
                     <strong className="text-primary">Communauté :</strong> Vous
-                    n'êtes plus seul. GBÔ, c'est un lien social fort qui vous
+                    n'êtes plus seul. GBÔ, c’est un lien social fort qui vous
                     permet de vous motiver, de partager vos victoires et de vous
                     sentir appartenir à un mouvement.
                   </span>
