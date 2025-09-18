@@ -90,34 +90,34 @@ const ServicesSection = () => {
       cta: "Découvrir le Gbô Challenge",
       link: "/gbo-challenge",
     },
-    {
-      icon: BookOpen,
-      title: "DEVENEZ UN COACH PARTENAIRE GBO",
-      description:
-        "Vous êtes un coach sportif certifié, passionné par le bien-être et motivé à faire une réelle différence ?",
-      features: [
-        "Accès à une clientèle ciblée",
-        "Visibilité accrue",
-        "Flexibilité et liberté",
-        "Une collaboration fructueuse",
-      ],
-      cta: "Rejoignez le Réseau GBO",
-      link: "/coach-partenaire",
-    },
-    {
-      icon: BookOpen,
-      title: "PARTENARIAT AVEC GBO : DEVELOPPEZ VOTRE SALLE DE SPORT",
-      description:
-        "Vous êtes gérant d'une salle de sport et cherchez à vous différencier, attirer de nouveaux membres et optimiser votre gestion ? ",
-      features: [
-        "Augmentation de votre Visibilité et de votre Communauté",
-        "Acquisition et Fidélisation de Clients",
-        "Technologie et Optimisation avec E-Gym",
-        "Passez à l'Action : Devenons Partenaires",
-      ],
-      cta: "Rejoignez le Réseau GBO",
-      link: "/partenariat-salle",
-    },
+    // {
+    //   icon: BookOpen,
+    //   title: "DEVENEZ UN COACH PARTENAIRE GBO",
+    //   description:
+    //     "Vous êtes un coach sportif certifié, passionné par le bien-être et motivé à faire une réelle différence ?",
+    //   features: [
+    //     "Accès à une clientèle ciblée",
+    //     "Visibilité accrue",
+    //     "Flexibilité et liberté",
+    //     "Une collaboration fructueuse",
+    //   ],
+    //   cta: "Rejoignez le Réseau GBO",
+    //   link: "/coach-partenaire",
+    // },
+    // {
+    //   icon: BookOpen,
+    //   title: "PARTENARIAT AVEC GBO : DEVELOPPEZ VOTRE SALLE DE SPORT",
+    //   description:
+    //     "Vous êtes gérant d'une salle de sport et cherchez à vous différencier, attirer de nouveaux membres et optimiser votre gestion ? ",
+    //   features: [
+    //     "Augmentation de votre Visibilité et de votre Communauté",
+    //     "Acquisition et Fidélisation de Clients",
+    //     "Technologie et Optimisation avec E-Gym",
+    //     "Passez à l'Action : Devenons Partenaires",
+    //   ],
+    //   cta: "Rejoignez le Réseau GBO",
+    //   link: "/partenariat-salle",
+    // },
     {
       icon: ShoppingBag,
       title: "GBO Nutrition & Guide : Votre Partenaire Bien-Être",
