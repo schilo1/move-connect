@@ -12,7 +12,7 @@ import Footer from "@/components/ui/footer";
 import ServicesSection from "@/components/sections/ServicesSection";
 import ProductSection from "@/components/sections/Product";
 import React from "react";
-
+import { Helmet } from "react-helmet";
 const Offres = () => {
   const sections = [
     {
@@ -35,6 +35,19 @@ const Offres = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>
+          GBÔ – Nos Services de Fitness et Musculation en Côte d'Ivoire
+        </title>
+        <meta
+          name="description"
+          content="Découvrez les services GBÔ : coaching sportif, programmes de fitness et musculation personnalisés pour tous en Côte d'Ivoire."
+        />
+        <meta
+          name="keywords"
+          content="GBÔ, services fitness, coaching, musculation, programmes sportifs, Côte d'Ivoire"
+        />
+      </Helmet>
       <Navigation />
       <main className="py-20">
         {/* Header Section */}

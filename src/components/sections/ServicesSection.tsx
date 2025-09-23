@@ -18,6 +18,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Helmet } from "react-helmet";
 
 const ServicesSection = () => {
   const services = [
@@ -140,6 +141,17 @@ const ServicesSection = () => {
       id="services"
       className="py-20 bg-background relative overflow-hidden"
     >
+      <Helmet>
+        <title>GBÔ – Fitness et Musculation en Côte d'Ivoire</title>
+        <meta
+          name="services"
+          content="GBÔ démocratise le fitness et la musculation en Côte d'Ivoire pour tous."
+        />
+        <meta
+          name="keywords"
+          content="GBÔ, fitness, musculation, Egym, produit, Gbo muscu, gbo fitness, gbo challenge, Côte d'Ivoire, sport, bien-être, coach, gym, abobo gbo, abobo"
+        />
+      </Helmet>
       {/* Background Effects */}
       <div className="absolute top-0 left-1/4 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-primary/3 rounded-full blur-3xl"></div>

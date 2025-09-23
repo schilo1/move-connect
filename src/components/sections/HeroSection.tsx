@@ -2,6 +2,7 @@ import { Play, ArrowRight, Users, Zap, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useEffect, useRef } from "react";
+import { Helmet } from "react-helmet";
 
 const HeroSection = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -16,6 +17,17 @@ const HeroSection = () => {
       id="accueil"
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero"
     >
+      <Helmet>
+        <title>GBÔ – Fitness et Musculation en Côte d'Ivoire</title>
+        <meta
+          name="description"
+          content="GBÔ démocratise le fitness et la musculation en Côte d'Ivoire pour tous."
+        />
+        <meta
+          name="keywords"
+          content="GBÔ, fitness, musculation, Côte d'Ivoire, sport, bien-être, coach, gym"
+        />
+      </Helmet>
       {/* Background Effects */}
       <div className="absolute inset-0 bg-glow-radial opacity-30"></div>
       <div className="absolute top-20 left-10 w-32 h-32 bg-primary/20 rounded-full blur-xl animate-float"></div>

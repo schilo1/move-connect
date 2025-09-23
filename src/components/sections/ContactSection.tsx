@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-
+import { Helmet } from "react-helmet";
 const ContactSection = () => {
   const contactInfo = [
     {
@@ -57,6 +57,17 @@ const ContactSection = () => {
 
   return (
     <section id="contact" className="py-20 bg-card/20 relative overflow-hidden">
+      <Helmet>
+        <title>GBÔ – Fitness et Musculation en Côte d'Ivoire</title>
+        <meta
+          name="contacts"
+          content="Contactez GBÔ pour rejoindre notre communauté sportive."
+        />
+        <meta
+          name="keywords"
+          content="GBÔ, fitness, musculation, Côte d'Ivoire, sport, bien-être, coach, gym ,gbo contact, gbo email, gbo phone, Gbo whatsapp"
+        />
+      </Helmet>
       {/* Background Effects */}
       <div className="absolute top-20 left-10 w-48 h-48 bg-primary/10 rounded-full blur-2xl animate-float"></div>
       <div className="absolute bottom-20 right-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl animate-float delay-1000"></div>
