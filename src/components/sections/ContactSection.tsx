@@ -28,7 +28,7 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: "E-mail",
-      details: ["contact@gbo-officiel.com", "info@gbo-officiel.com"],
+      details: ["contact@gbô.com", "collaborations@gbô.com"],
     },
   ];
 
